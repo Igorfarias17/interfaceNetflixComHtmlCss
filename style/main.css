@@ -1,0 +1,118 @@
+:root{  /* Cores padrão do site*/
+
+    --vermelha: #e50914;
+    --preta: #141414;
+
+}
+
+*{  /* Reseta as configurações do site*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{  /*Modifica o corpo do site*/
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container{ /* Modifica a lista de Início, Séries...*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{ /*Modifica a logo da NETFLIX*/
+    margin-left: 5px;
+    color: var(--vermelha);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a{ /*Modifica as cores da lista*/
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{ /*Modifica a cor quando passa o mouse */
+    color: #fff;
+
+}
+
+/*FILME PRINCIPAL*/
+
+.filme-principal{ /*Colocando a imagem de capa*/
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa-pb.jpg');
+    height: 500px;
+    background-size: cover;
+
+/* Formatando os botões da capa*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{ /*Alterando a descrição da capa*/
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo{ /*Alterando o tamanho da fonte do titulo "PEAKY BLINDERS*/
+    margin-top: 10%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{ /*Alterando os botões de "ASSITIR AGORA" e "MAIS INFORMAÇOES"*/
+
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+/*Alterando o tamanho dos botões*/
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+/* Deixando os botões diferente na hora que passa o mouse*/
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{ /*Mudando as cores na hora que passa o mouse*/
+    background-color: white;
+    color:black;
+}
+
+.botao i{ /*Alterando os espaços dos ícones*/
+    margin-right: 5px;
+}
+
+.container{ /*Altera tudo dentro da classe container*/
+    margin-left: 10px;
+    
+}
+
+.filme-principal .container{ /*Altera somente o container da classe filme principal*/
+    width: 70%;
+    
+}
+
+.box-filme{ /*Altera as imagens dos filmes*/
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;    
+
+}
+
+.carrosel-filmes{
+
+    margin-top: 5px;
+}

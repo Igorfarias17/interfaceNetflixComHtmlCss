@@ -1,0 +1,123 @@
+:root{  /* Cores padrão do site*/
+
+    --vermelha: #e50914;
+    --preta: #141414;
+
+}
+
+*{  /* Reseta as configurações do site*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{  /*Modifica o corpo do site*/
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+    
+}
+
+header .container{ /* Modifica a lista de Início, Séries...*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{ /*Modifica a logo da NETFLIX*/
+    margin-left: 5px;
+    color: var(--vermelha);
+    font-family: 'Arial Black';
+    font-size: 40px;
+}
+
+header nav a{ /*Modifica as cores da lista*/
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{ /*Modifica a cor quando passa o mouse */
+    color: #fff;
+
+}
+
+.capa-informacao1 { /*Colocando a imagem de capa*/
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/capa-pb.jpg');
+    height: 490px;
+    background-size: cover;
+    
+}
+
+.capa-informacao2 {
+    background: url('../img/capa-info.jpg');
+    height: 450px;
+    width: 300px;
+    background-size: cover;
+    margin-left: 15px;  
+    float: left;
+    
+}
+
+.container{ /*Altera tudo dentro da classe container*/
+    margin-left: 10px;
+   
+}
+
+.titulo{
+    margin-top: 3%;
+    text-align: left;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: rgb(233, 229, 229);
+     
+}
+
+.capa-informacao1 .text{
+    margin-top: 75px;
+    margin-bottom: 14px;
+    font-style: italic;
+    color: #AAA;
+}
+
+.capa-informacao1 .descricao{ /*Alterando a descrição da capa*/
+    margin-top: 13px;
+    margin-bottom: 55px;
+}
+h2{
+    
+    font-weight: bolder;
+    color: var(--vermelha);
+}
+
+.elenco{
+    margin-top: 15px;
+    font-size: 20px;
+    color: var(--vermelha);
+ 
+}
+.box-atores{ /*Altera as imagens dos filmes*/
+    height: 100%;
+    width: 100%;
+    display: block;
+    height: 330px;
+    cursor: pointer;   
+}
+
+.carrosel-atores{
+    margin-top: 10px;
+}
+
+.dados, .dados2 {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.dados1{
+    margin-top: 5px;
+    color: rgb(131, 128, 128); 
+    text-align: center;   
+    font-style: italic  ;
+}
